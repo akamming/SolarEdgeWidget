@@ -2,13 +2,18 @@
     <iq:application entry="SolarEdgeWidgetApp" id="19e8ce522fef46479c3c9409720990df" launcherIcon="@Drawables.SolarEdgeIcon" name="@Strings.AppName" type="widget">
         <iq:products>
             <iq:product id="approachs60"/>
+            <iq:product id="d2air"/>
+            <iq:product id="d2airx10"/>
             <iq:product id="d2bravo"/>
             <iq:product id="d2bravo_titanium"/>
             <iq:product id="d2charlie"/>
             <iq:product id="d2delta"/>
             <iq:product id="d2deltapx"/>
             <iq:product id="d2deltas"/>
+            <iq:product id="descentg1"/>
             <iq:product id="descentmk1"/>
+            <iq:product id="descentmk2"/>
+            <iq:product id="descentmk2s"/>
             <iq:product id="edge1030"/>
             <iq:product id="edge1030bontrager"/>
             <iq:product id="edge520plus"/>
@@ -18,7 +23,9 @@
             <iq:product id="edge_1000"/>
             <iq:product id="edge_520"/>
             <iq:product id="edgeexplore"/>
+            <iq:product id="enduro"/>
             <iq:product id="epix"/>
+            <iq:product id="epix2"/>
             <iq:product id="fenix3"/>
             <iq:product id="fenix3_hr"/>
             <iq:product id="fenix5"/>
@@ -51,15 +58,25 @@
             <iq:product id="fr945"/>
             <iq:product id="fr945lte"/>
             <iq:product id="gpsmap66"/>
+            <iq:product id="gpsmap86"/>
+            <iq:product id="instinct2s"/>
+            <iq:product id="legacyherocaptainmarvel"/>
+            <iq:product id="legacyherofirstavenger"/>
+            <iq:product id="legacysagadarthvader"/>
+            <iq:product id="legacysagarey"/>
+            <iq:product id="marqadventurer"/>
             <iq:product id="marqathlete"/>
             <iq:product id="marqaviator"/>
             <iq:product id="marqcaptain"/>
             <iq:product id="marqdriver"/>
             <iq:product id="marqexpedition"/>
+            <iq:product id="marqgolfer"/>
+            <iq:product id="montana7xx"/>
             <iq:product id="oregon7xx"/>
             <iq:product id="rino7xx"/>
             <iq:product id="venu"/>
             <iq:product id="venu2"/>
+            <iq:product id="venu2plus"/>
             <iq:product id="venu2s"/>
             <iq:product id="venud"/>
             <iq:product id="venusq"/>
@@ -69,6 +86,8 @@
             <iq:product id="vivoactive3d"/>
             <iq:product id="vivoactive3m"/>
             <iq:product id="vivoactive3mlte"/>
+            <iq:product id="vivoactive4"/>
+            <iq:product id="vivoactive4s"/>
             <iq:product id="vivoactive_hr"/>
         </iq:products>
         <iq:permissions>
