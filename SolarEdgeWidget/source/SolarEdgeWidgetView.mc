@@ -161,7 +161,7 @@ class SolarEdgeWidgetView extends Ui.View {
     
     
     // Receive the data from the web request
-        function onReceive(responseCode, data) 
+        function onReceive(responseCode as Lang.Number, data as Lang.Dictionary or Lang.String or Null) as Void 
         {
            // Turn of refreshpage
            ShowRefreshing=false;
