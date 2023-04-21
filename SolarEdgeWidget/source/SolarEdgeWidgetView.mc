@@ -414,8 +414,6 @@ class SolarEdgeWidgetView extends Ui.View {
 	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2,Graphics.FONT_LARGE,Total,Graphics.TEXT_JUSTIFY_CENTER);
 	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2+linediff*1.2,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
 	    	} else if (CurrentPage==6) {
-				System.println("DC.getHeight "+dc.getHeight());
-	    	    
 	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2-2*linediff+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.CURRENT)+": "+Current, Graphics.TEXT_JUSTIFY_CENTER);
 	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2-linediff+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.TODAY)+": "+Today, Graphics.TEXT_JUSTIFY_CENTER);
 	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.THISMONTH)+": "+ThisMonth, Graphics.TEXT_JUSTIFY_CENTER);
