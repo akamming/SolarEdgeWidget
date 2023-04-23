@@ -376,49 +376,46 @@ class SolarEdgeWidgetView extends Ui.View {
 			// All details
 			// create offset for lager displays.
 			var offset=0;
-			var linediff=25;
 			if (dc.getHeight()>180) {
 				offset=-10;
-				linediff=35;
 			} 
 			if (dc.getHeight()>300) {
 				offset=-10;
-				linediff=40;
 			}
 
             // Show status page
 	        if (CurrentPage==1) {
 	            // Current Power
-	        	dc.drawText(dc.getWidth()/2,dc.getHeight()/2-linediff*1.2,Graphics.FONT_LARGE,Ui.loadResource(Rez.Strings.CURRENT),Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2,Graphics.FONT_LARGE,Current,Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2+linediff*1.2,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2,dc.getHeight()*30/100,Graphics.FONT_LARGE,Ui.loadResource(Rez.Strings.CURRENT),Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*46/100,Graphics.FONT_LARGE,Current,Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*62/100,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
 	        
 	    	} else if (CurrentPage==2) {
 	    	    // Today
-	        	dc.drawText(dc.getWidth()/2,dc.getHeight()/2-linediff*1.2,Graphics.FONT_LARGE,loadResource(Rez.Strings.TODAY),Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2,Graphics.FONT_LARGE,Today,Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2+linediff*1.2,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2,dc.getHeight()*30/100,Graphics.FONT_LARGE,loadResource(Rez.Strings.TODAY),Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*46/100,Graphics.FONT_LARGE,Today,Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*62/100,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
 	    	} else if (CurrentPage==3) {
 	    	    //  this Week
-	        	dc.drawText(dc.getWidth()/2,dc.getHeight()/2-linediff*1.2,Graphics.FONT_LARGE,loadResource(Rez.Strings.THISMONTH),Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2,Graphics.FONT_LARGE,ThisMonth,Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2+linediff*1.2,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2,dc.getHeight()*30/100,Graphics.FONT_LARGE,loadResource(Rez.Strings.THISMONTH),Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*46/100,Graphics.FONT_LARGE,ThisMonth,Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*62/100,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
 	    	} else if (CurrentPage==4) {
 	    	    // This Month
-	        	dc.drawText(dc.getWidth()/2,dc.getHeight()/2-linediff*1.2,Graphics.FONT_LARGE,loadResource(Rez.Strings.THISYEAR),Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2,Graphics.FONT_LARGE,ThisYear,Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2+linediff*1.2,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2,dc.getHeight()*30/100,Graphics.FONT_LARGE,loadResource(Rez.Strings.THISYEAR),Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*46/100,Graphics.FONT_LARGE,ThisYear,Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*62/100,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
 	    	} else if (CurrentPage==5) {
 	    	    // Total
-	        	dc.drawText(dc.getWidth()/2,dc.getHeight()/2-linediff*1.2,Graphics.FONT_LARGE,loadResource(Rez.Strings.TOTAL),Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2,Graphics.FONT_LARGE,Total,Graphics.TEXT_JUSTIFY_CENTER);
-	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()/2+linediff*1.2,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2,dc.getHeight()*30/100,Graphics.FONT_LARGE,loadResource(Rez.Strings.TOTAL),Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*46/100,Graphics.FONT_LARGE,Total,Graphics.TEXT_JUSTIFY_CENTER);
+	    	    dc.drawText(dc.getWidth()/2,dc.getHeight()*62/100,Graphics.FONT_SMALL,LastUpdate,Graphics.TEXT_JUSTIFY_CENTER);
 	    	} else if (CurrentPage==6) {
-	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2-2*linediff+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.CURRENT)+": "+Current, Graphics.TEXT_JUSTIFY_CENTER);
-	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2-linediff+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.TODAY)+": "+Today, Graphics.TEXT_JUSTIFY_CENTER);
-	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.THISMONTH)+": "+ThisMonth, Graphics.TEXT_JUSTIFY_CENTER);
-	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2+linediff+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.THISYEAR)+": "+ThisYear, Graphics.TEXT_JUSTIFY_CENTER);
-	        	dc.drawText(dc.getWidth()/2, dc.getHeight()/2+2*linediff+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.TOTAL)+": "+Total, Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2, dc.getHeight()*26/100+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.CURRENT)+": "+Current, Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2, dc.getHeight()*37/100+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.TODAY)+": "+Today, Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2, dc.getHeight()*50/100+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.THISMONTH)+": "+ThisMonth, Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2, dc.getHeight()*63/100+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.THISYEAR)+": "+ThisYear, Graphics.TEXT_JUSTIFY_CENTER);
+	        	dc.drawText(dc.getWidth()/2, dc.getHeight()*76/100+offset, Graphics.FONT_MEDIUM, loadResource(Rez.Strings.TOTAL)+": "+Total, Graphics.TEXT_JUSTIFY_CENTER);
 	    	}
     	}
     }
